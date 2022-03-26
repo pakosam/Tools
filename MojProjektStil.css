@@ -1,0 +1,165 @@
+main{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    flex-basis: 8%;
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-variant-caps: unicase;
+}
+
+.upoznavanjeOstalo{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.upoznavanjeOstaloTekstovi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: x-large;
+    font-variant-caps: unicase;
+}
+
+.tekstUpoznavanje{
+    margin-top: 25px;
+}
+
+.tekstAlati{
+    align-self: center;
+}
+
+.tekstSlike{
+    margin-top: 25px;
+}
+
+.ponuda{
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ponudaTekst{
+    align-self: center;
+    font-family: sans-serif;
+    font-variant-caps: unicase;
+    margin-top: 40px;
+}
+
+.ponudaOpis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.slikeAlata{
+    height: 100px;
+    width: 150px;
+}
+
+.informacijeOProizvodima{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.informacijeOProizvodimaTekst{
+    text-align-last: center;
+    font-family: sans-serif;
+    font-variant-caps: unicase;
+    margin-top: 40px;
+}
+
+.iskustva{
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.iskustvaSNamaTekst{
+    text-align-last: center;
+    font-family: sans-serif;
+    font-variant-caps: unicase;
+    margin-top: 40px;
+}
+
+footer{
+    height: 70px;
+}
+
+.alatiDOOiLogo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-right: 15px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.liKontakt{
+    margin-left: 20px;
+}
+
+.liONama{
+    margin-left: 20px;
+}
+
+.gumbovi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 25px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+}
+
+.content-table thead tr{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(){
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid cornflowerblue;
+}
+
+
