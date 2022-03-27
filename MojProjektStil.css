@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 main{
     height: auto;
     display: flex;
@@ -10,6 +14,14 @@ nav{
     justify-content: space-around;
     font-family: sans-serif;
     font-variant-caps: unicase;
+}
+
+nav div div:hover,
+nav ul li:hover{
+    color: #7155b1;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bolder;
 }
 
 .upoznavanjeOstalo{
@@ -30,6 +42,12 @@ nav{
 
 .tekstUpoznavanje{
     margin-top: 25px;
+}
+
+.tekstUpoznavanje:hover{
+    color: #7155b1;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .tekstAlati{
@@ -57,13 +75,22 @@ nav{
 .ponudaOpis{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 40px;
 }
 
 .slikeAlata{
     height: 100px;
     width: 150px;
+    border: 1px solid rgb(0 0 0 / 5%);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.tekstIspodSlikePonuda{
+    text-align-last: center;
+    font-size: smaller;
 }
 
 .informacijeOProizvodima{
@@ -92,8 +119,44 @@ nav{
     margin-top: 40px;
 }
 
+.recenzije{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recenzijeSlika1{
+    height: 80px;
+    width: 240px;
+}
+
+.recenzijeSlika2{
+    height: 80px;
+    width: 140px;
+}
+
+.marginZaRecenziju2{
+    margin-left: 60px;
+}
+
 footer{
-    height: 70px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-variant-caps: unicase;
+    margin-top: 70px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+footer ul li:hover{
+    color: black;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .alatiDOOiLogo{
@@ -105,6 +168,7 @@ footer{
     height: 80px;
     width: 80px;
     margin-right: 15px;
+    padding: 10px 10px;
 }
 
 ul{
@@ -128,14 +192,31 @@ ul{
     margin-top: 40px;
 }
 
+.gumb{
+    background-color: #7155b1;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+    cursor: pointer;
+}
+
+.gumb:hover{
+    transform: scale(1.2,1.2);
+}
+
 .content-table{
     border-collapse: collapse;
     margin: 25px 25px;
     font-size: 0.9em;
-    min-width: 400px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 50rem;
+    align-self: center;
 }
 
 .content-table thead tr{
@@ -150,16 +231,23 @@ ul{
     padding: 12px 15px;
 }
 
+.custom20percentwidth{
+    width: 20%;
+}
+
+.custom40percentwidth{
+    width: 40%;
+}
+
 .content-table tbody tr{
     border-bottom: 1px solid #dddddd;
 }
 
 .content-table tbody tr:nth-of-type(){
-    background-color: #f3f3f3;
+    background: #fff9f9;
 }
 
 .content-table tbody tr:last-of-type{
     border-bottom: 2px solid cornflowerblue;
 }
-
 
