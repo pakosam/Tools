@@ -5,169 +5,158 @@
     <title>Alati</title>
 </head>
 
-<body>
+<body class="pozadina">
     <main>
         <nav>
             <div class="alatiDOOiLogo">
-                <img src="../MojProjekt/hand-tools-logo.jpg" class="logo">
-                <div class="tekstAlati">Alati d.o.o.</div>
+                <img src="../MojProjekt/hand-tools-logo.jpg" onclick="redirect('MojProjekt.html')" class="logo">
+                <div class="tekstAlati" onclick="redirect('MojProjekt.html')">Alati d.o.o.</div>
             </div>
             <ul>
-                <li>O nama</li>
-                <li class="liKontakt">Kontakt</li>
-                <li class="liONama">Naslovna</li>
+                <li onclick="redirect('MojProjektONama.html')">O nama</li>
+                <li onclick="redirect('MojProjektKontakt.html')" class="liKontakt">Kontakt</li>
+                <li onclick="redirect('MojProjekt.html')" class="liONama">Naslovna</li>
             </ul>
         </nav>
         <div class="upoznavanjeOstalo">
-            <div class="upoznavanjeOstaloTekstovi">
-                <div class="tekstUpoznavanje">Upoznavanje</div>
-                <div class="tekstSlike">Slike</div>
+            <div class="upoznavanjeOstaloTekstovi tekstUpoznavanje">
+                <a onclick="redirect('MojProjektONama.html')" class="tekstUpoznavanje">Upoznavanje</a>
             </div>
             <div class="gumbovi">
-                <button>Cijene</button>
-                <button>Ponude</button>
-                <button>Iskustva</button>
+                <button class="gumb" href="#informacijeOProizvodima" id="view-informacije">Cijene</button>
+                <button class="gumb" href="#ponuda" id="view-ponuda">Ponude</button>
+                <button class="gumb" href="#iskustva" id="view-iskustva">Iskustva</button>
             </div>
         </div>
-        <div class="ponuda">
+        <div id="ponuda">
             <div class="ponudaTekst">Ponuda</div>
             <div class="ponudaOpis">
                 <div>
+                    <p class="tekstIspodSlikePonuda">Čekići</p>
                     <image img src="../MojProjekt/cekic.jpg" class="slikeAlata"></image>
-                    <p>Čekići</p>
                 </div>
                 <div>
+                    <p class="tekstIspodSlikePonuda">Odvijači</p>
                     <image img src="../MojProjekt/odvijaci.jpg" class="slikeAlata"></image>
-                    <p>Odvijači</p>
                 </div>
                 <div>
+                    <p class="tekstIspodSlikePonuda">Pile</p>
                     <image img src="../MojProjekt/pilaZaMetal.jpg" class="slikeAlata"></image>
-                    <p>Pile</p>
                 </div>
             </div>
         </div>
-        <div class="informacijeOProizvodima">
+        <div id="informacijeOProizvodima">
             <div class="informacijeOProizvodimaTekst">Informacije o proizvodima</div>
             <table class="content-table">
                 <thead>
                     <tr>
-                        <th>Ime proizvoda</th>
-                        <th>Cijena</th>
-                        <th>Opis proizvoda</th>
-                        <th>Garancija</th>
+                        <th class="custom20percentwidth">Ime proizvoda</th>
+                        <th class="custom20percentwidth">Cijena</th>
+                        <th class="custom40percentwidth">Opis proizvoda</th>
+                        <th class="custom20percentwidth">Garancija</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Odvijač</td>
-                        <td>30 kuna</td>
-                        <td>Standardni model s ravnom glavom i Phillips model srednje veličine </td>
-                        <td>3 godine</td>
+                        <td class="custom20percentwidth">Odvijač</td>
+                        <td class="custom20percentwidth">30 kuna</td>
+                        <td class="custom40percentwidth">Standardni model s ravnom glavom i Phillips model srednje veličine </td>
+                        <td class="custom20percentwidth">3 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Odvijač za ispitivanje faza</td>
-                        <td>45 kuna</td>
-                        <td>Ovi praktični uređaji omogućuju vam da provjerite jesu li utikač ili žica pod naponom s malim svjetlom u ručki </td>
-                        <td>5 godina</td>
+                        <td class="custom20percentwidth">Odvijač za ispitivanje faza</td>
+                        <td class="custom20percentwidth">45 kuna</td>
+                        <td class="custom40percentwidth">Ovi praktični uređaji omogućuju vam da provjerite jesu li utikač ili žica pod naponom s malim svjetlom u ručki </td>
+                        <td class="custom20percentwidth">5 godina</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Pila</td>
-                        <td>80 kuna</td>
-                        <td>Jeftinije pile obično imaju tanje oštrice koje mogu biti malo previše fleksibilne i puno se energije troši na njihanje </td>
-                        <td>3 godine</td>
+                        <td class="custom20percentwidth">Pila</td>
+                        <td class="custom20percentwidth">80 kuna</td>
+                        <td class="custom40percentwidth">Jeftinije pile obično imaju tanje oštrice koje mogu biti malo previše fleksibilne i puno se energije troši na njihanje </td>
+                        <td class="custom20percentwidth">3 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Pila za metal</td>
-                        <td>130 kuna</td>
-                        <td>Ako planirate raditi neke vodoinstalaterske radove ili bilo koje poslove koji zahtijevaju rezanje metala, trebat će vam pila za metal. Također su korisni za rezanje plastike i manjih komada drva</td>
-                        <td>4 godine</td>
+                        <td class="custom20percentwidth">Pila za metal</td>
+                        <td class="custom20percentwidth">130 kuna</td>
+                        <td class="custom40percentwidth">Ako planirate raditi neke vodoinstalaterske radove ili bilo koje poslove koji zahtijevaju rezanje metala, trebat će vam pila za metal. Također su korisni za rezanje plastike i manjih komada drva</td>
+                        <td class="custom20percentwidth">4 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Čekić</td>
-                        <td>30 kuna</td>
-                        <td>Aspekt koji treba uzeti u obzir je ručka, a drveni model nije nužno najbolji </td>
-                        <td>2 godine</td>
+                        <td class="custom20percentwidth">Čekić</td>
+                        <td class="custom20percentwidth">30 kuna</td>
+                        <td class="custom40percentwidth">Aspekt koji treba uzeti u obzir je ručka, a drveni model nije nužno najbolji </td>
+                        <td class="custom20percentwidth">2 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Metar</td>
-                        <td>10 kuna</td>
-                        <td>Služi mjerenju prozora za zavjese, poda za tepih, udubljenja za police ili drva za police</td>
-                        <td>2 godine</td>
+                        <td class="custom20percentwidth">Metar</td>
+                        <td class="custom20percentwidth">10 kuna</td>
+                        <td class="custom40percentwidth">Služi mjerenju prozora za zavjese, poda za tepih, udubljenja za police ili drva za police</td>
+                        <td class="custom20percentwidth">2 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Libela</td>
-                        <td>60 kuna</td>
-                        <td>Nemojte čak ni pokušavati postaviti police, držače za ručnike ili objesiti slike bez libele! </td>
-                        <td>3 godine</td>
+                        <td class="custom20percentwidth">Libela</td>
+                        <td class="custom20percentwidth">60 kuna</td>
+                        <td class="custom40percentwidth">Nemojte čak ni pokušavati postaviti police, držače za ručnike ili objesiti slike bez libele! </td>
+                        <td class="custom20percentwidth">3 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Rezač žice</td>
-                        <td>40 kuna</td>
-                        <td>Nikada nemojte koristiti kućne škare za rezanje žice. Nabavite odgovarajući rezač žice za rezanje i skidanje žica prilikom zamjene utikača, svjetala i utičnica te drugih projekata u kući i vrtu </td>
-                        <td>2 godine</td>
+                        <td class="custom20percentwidth">Rezač žice</td>
+                        <td class="custom20percentwidth">40 kuna</td>
+                        <td class="custom40percentwidth">Nikada nemojte koristiti kućne škare za rezanje žice. Nabavite odgovarajući rezač žice za rezanje i skidanje žica prilikom zamjene utikača, svjetala i utičnica te drugih projekata u kući i vrtu </td>
+                        <td class="custom20percentwidth">2 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Kliješta</td>
-                        <td>50 kuna</td>
-                        <td>Koriste se za uklanjanje čavala, spajalica, žica i sl. </td>
-                        <td>3 godine</td>
+                        <td class="custom20percentwidth">Kliješta</td>
+                        <td class="custom20percentwidth">50 kuna</td>
+                        <td class="custom40percentwidth">Koriste se za uklanjanje čavala, spajalica, žica i sl. </td>
+                        <td class="custom20percentwidth">3 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Ključ</td>
-                        <td>35 kuna</td>
-                        <td>Neophodni alat za vodoinstalaterski posao je ključ</td>
-                        <td>3 godine</td>
+                        <td class="custom20percentwidth">Ključ</td>
+                        <td class="custom20percentwidth">35 kuna</td>
+                        <td class="custom40percentwidth">Neophodni alat za vodoinstalaterski posao je ključ</td>
+                        <td class="custom20percentwidth">3 godine</td>
                     </tr>
-                </tbody>
-                <tbody>
                     <tr>
-                        <td>Imbus Ključ</td>
-                        <td>20 kuna</td>
-                        <td>Najčešće se koriste kod rastavljanja pokućstva</td>
-                        <td>1 godina</td>
+                        <td class="custom20percentwidth">Imbus Ključ</td>
+                        <td class="custom20percentwidth">20 kuna</td>
+                        <td class="custom40percentwidth">Najčešće se koriste kod rastavljanja pokućstva</td>
+                        <td class="custom20percentwidth">1 godina</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div class="iskustva">
+        <div id="iskustva">
             <div class="iskustvaSNamaTekst">Iskustva s nama</div>
-            <div>
-                <p></p>
-                <image></image>
-                <p></p>
+            <div class="recenzije">
+                <image img src="../MojProjekt/klijesta.jpg" class="recenzijeSlika1"></image>
+                <div>
+                    <p>'Odličan proizvod!' - Ivan, Zagreb</p>
+                    <p>Prosječna korisnička ocjena: 4.22/5</p>
+                </div>
             </div>
-            <div>
-                <p></p>
-                <image></image>
-                <p></p>
+            <div class="recenzije">
+                <image img src="../MojProjekt/akumulatorskaBusilica.jpg" class="recenzijeSlika2"></image>
+                <div class="marginZaRecenziju2">
+                    <p>'Super bušilica! - Ante, Sinj</p>
+                    <p>Prosječna korisnička ocjena: 5/5</p>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <img src="../MojProjekt/hand-tools-logo.jpg" onclick="redirect('MojProjekt.html')" class="logo">
+        <ul>
+            <li onclick="redirect('MojProjektONama.html')">O nama</li>
+            <li onclick="redirect('MojProjektKontakt.html')" class="liKontakt">Kontakt</li>
+            <li onclick="redirect('MojProjekt.html')" class="liONama">Naslovna</li>
+        </ul>
     </footer>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="../MojProjekt/MojProjekt.js"></script>
+    
 </body>
 
 </html>
