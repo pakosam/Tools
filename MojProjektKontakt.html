@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Kontakt</title>
+    <link rel="stylesheet" href="../MojProjekt/MojProjektStil.css">
+    <title>Kontakt</title>
 </head>
 
 <body>
-    Naziv: Alati d.o.o.
-    Adresa: Kanalski put 54, 10000 Zagreb
-    Kontakt: 01 405 200
+    <nav>
+        <div class="alatiDOOiLogo">
+            <img src="../MojProjekt/hand-tools-logo.jpg" onclick="redirect('MojProjekt.html')" class="logo">
+            <div class="tekstAlati" onclick="redirect('MojProjekt.html')">Alati d.o.o.</div>
+        </div>
+        <ul>
+            <li onclick="redirect('MojProjektONama.html')">O nama</li>
+            <li onclick="redirect('MojProjektKontakt.html')" class="liKontakt">Kontakt</li>
+            <li onclick="redirect('MojProjekt.html')" class="liONama">Naslovna</li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            Naziv: Alati d.o.o.
+        </div>
+        <div>
+            Adresa: Kanalski put 54, 10000 Zagreb
+        </div>
+        <div>
+        Kontakt: 01 405 200
+        </div>
+    </main>
+    <footer class="footerKontakt">
+        <img src="../MojProjekt/hand-tools-logo.jpg" onclick="redirect('MojProjekt.html')" class="logo">
+        <ul>
+            <li onclick="redirect('MojProjektONama.html')">O nama</li>
+            <li onclick="redirect('MojProjektKontakt.html')" class="liKontakt">Kontakt</li>
+            <li onclick="redirect('MojProjekt.html')" class="liONama">Naslovna</li>
+        </ul>
+    </footer>
+    <script src="../MojProjekt/MojProjekt.js"></script>
 </body>
-
 </html>
